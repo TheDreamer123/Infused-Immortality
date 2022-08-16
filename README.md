@@ -1,4 +1,4 @@
-# infused-immortality
+# Infused Immortality
 Totem of undying, but with potions.
 
 ## How do i get the totems?
