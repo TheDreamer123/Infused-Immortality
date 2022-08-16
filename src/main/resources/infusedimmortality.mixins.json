@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "net.dreamer.infusedimmortality.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ClientPlayNetworkHandlerMixin",
+		"LivingEntityMixin"
+	],
+	"client": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
