@@ -42,11 +42,12 @@ public abstract class LivingEntityMixin extends Entity {
 
             for (Hand hand : var4) {
                 ItemStack itemStack2 = this.getStackInHand(hand);
-                if (itemStack2.isOf(InfusedimmortalityItemRegistry.INFUSED_TOTEM)) {
-                    itemStack = itemStack2.copy();
-                    itemStack2.decrement(1);
-                    break;
-                }
+                if(getStackInHand(Hand.MAIN_HAND).getItem() != Items.TOTEM_OF_UNDYING)
+                    if (itemStack2.isOf(InfusedimmortalityItemRegistry.INFUSED_TOTEM)) {
+                        itemStack = itemStack2.copy();
+                        itemStack2.decrement(1);
+                        break;
+                    }
             }
 
             if (itemStack != null) {
@@ -65,7 +66,7 @@ public abstract class LivingEntityMixin extends Entity {
                     else this.addStatusEffect(new StatusEffectInstance(statusEffectInstance));
                 }
 
-                this.world.sendEntityStatus(this, (byte)35);
+                this.world.sendEntityStatus(this, (byte)69420);
                 cir.setReturnValue(true);
             }
         }
